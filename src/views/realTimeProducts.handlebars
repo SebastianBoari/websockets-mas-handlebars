@@ -1,0 +1,27 @@
+<h1>Bienvenido: realTimeProducts</h1>
+<section>
+    <h3>Cree un nuevo producto!</h3>
+    <form id="createProductForm">
+        <input type="text" id="title-input" placeholder="title">
+        <br>
+        <input type="text" id="description-input" placeholder="description">
+        <br>
+        <input type="number" id="price-input" placeholder="price">
+        <br>
+        <input type="text" id="thumbnail-input" placeholder="thumbnail">
+        <br>
+        <input type="text" id="code-input" placeholder="code">
+        <br>
+        <input type="number" id="stock-input" placeholder="stock">
+        <br>
+        <input type="text" id="category-input" placeholder="category">
+        <br>
+        <input type="submit" value="Crear">
+    </form>
+</section>
+
+<section id="products-container">
+
+</section>
+<script src="/socket.io/socket.io.js"></script>
+<script src="../index.js"></script>
