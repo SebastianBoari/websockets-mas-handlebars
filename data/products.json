@@ -34,16 +34,5 @@
 		"stock": 200,
 		"category": "alimentos",
 		"thumbnails": "www.imgur.com/arroz"
-	},
-	{
-		"id": 4,
-		"title": "Vino",
-		"description": "Un buen vino",
-		"code": "VINO12301",
-		"price": 299,
-		"status": true,
-		"stock": 100,
-		"category": "bebidas",
-		"thumbnails": []
 	}
 ]

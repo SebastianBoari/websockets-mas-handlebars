@@ -18,10 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p>ID: ${product.id}</p>
                         <p>Stock: ${product.stock}</p>
                     </div>
-                    <button class="deleteBtn" data-id="${product.id}">Delete</button>
+                    <button class="deleteButton" data-id="${product.id}">Delete</button>
                 </div>
             `
 			productsContainer.innerHTML += productCard
+
+			const deleteButtons = document.querySelectorAll('.deleteButton')
+			deleteButtons.forEach((button) => {
+				const pid = button.dataset.id
+				button.addEventListener('click', () => {
+					socket.emit('deleteProduct', pid)
+				})
+			})
+
 		})
 	})
 })
