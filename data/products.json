@@ -34,5 +34,27 @@
 		"stock": 200,
 		"category": "alimentos",
 		"thumbnails": "www.imgur.com/arroz"
+	},
+	{
+		"id": 4,
+		"title": "Vino Mendocino",
+		"description": "Un buen vino de Mendoza",
+		"code": "VINOMEN123",
+		"price": 299,
+		"status": true,
+		"stock": 100,
+		"category": "bebidas",
+		"thumbnails": "imagen-del-vino.png"
+	},
+	{
+		"id": 5,
+		"title": "Prueba",
+		"description": "Producto de prueba",
+		"code": "PRUEBAS123",
+		"price": 1000,
+		"status": true,
+		"stock": 100,
+		"category": "pruebas",
+		"thumbnails": "imagen-de-prueba.jpg"
 	}
 ]

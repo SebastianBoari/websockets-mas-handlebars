@@ -26,8 +26,9 @@ const viewsProductsRouter = (io) => {
 					if(!product) return
 					
 					const { title, description, price, thumbnail, code, stock, category } = product
-	
+
 					await productManager.addProduct(title, description, price, thumbnail, code, stock, category)
+
 					const updatedProducts = await productManager.getProducts()
 	
 					io.emit('products', updatedProducts)
